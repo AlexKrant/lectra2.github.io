@@ -188,11 +188,11 @@ td, th {
 }
 
 .w-icon-slider-right:before {
-  content: ">";
+  content: "оЂ";
 }
 
 .w-icon-slider-left:before {
-  content: "<";
+  content: "оЃ";
 }
 
 .w-icon-nav-menu:before {
@@ -200,7 +200,7 @@ td, th {
 }
 
 .w-icon-arrow-down:before, .w-icon-dropdown-toggle:before {
-  content: "▾";
+  content: "оѓ";
 }
 
 .w-icon-file-upload-remove:before {
@@ -3398,7 +3398,7 @@ label {
 
 blockquote {
   text-align: left;
-  /* background-image: url("https://cdn.prod.website-files.com/665ef9ff4e4a3c3f283d9d5d/66604ddb26448506de4478d7_quote-right.svg"); */
+  background-image: url("https://cdn.prod.website-files.com/665ef9ff4e4a3c3f283d9d5d/66604ddb26448506de4478d7_quote-right.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 50px;
@@ -3817,23 +3817,11 @@ blockquote {
   display: block;
 }
 
-.primary-button2.full-width-mobile {
-  display: block;
-}
-
 .primary-button.margin-top-button-form, .primary-button.margin-top-button {
   margin-top: 40px;
 }
 
-.primary-button2.margin-top-button-form, .primary-button2.margin-top-button {
-  margin-top: 40px;
-}
-
 .primary-button.button-tablet-top-gap {
-  margin-bottom: 10px;
-}
-
-.primary-button2.button-tablet-top-gap {
   margin-bottom: 10px;
 }
 
@@ -6613,7 +6601,7 @@ blockquote {
 }
 
 .subtitle-icon {
-  background-image: radial-gradient(circle, rgba(0, 129, 250, 0.5), rgba(255, 255, 255, 0));
+  background-image: radial-gradient(circle, rgba(0, 87, 250, 0.5), rgba(255, 255, 255, 0));
   border-radius: 100%;
   justify-content: center;
   align-items: center;
@@ -7246,7 +7234,7 @@ blockquote {
 
 .list-item-with-icon {
   text-align: left;
-  background-image: url("https://cdn.prod.website-files.com/665ef9ff4e4a3c3f283d9d5d/66681c7daed1bdb8d79b81e7_ic_round-check-box.svg");
+  background-image: url("imgs/checkbox\ 1.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: auto;
@@ -12146,77 +12134,4 @@ blockquote {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-}
-
-
-.button-container {
-  display: flex;
-  gap: 20px; /* Расстояние между кнопками */
-}
-
-.primary-button2 {
-  border: 1px solid var(--primary);
-  background-color: var(--white);
-  color: var(--primary);
-  text-align: center;
-  border-radius: 30px;
-  justify-content: center;
-  padding: 12px 32px;
-  font-family: Space Grotesk, sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5em;
-  transition: all .35s;
-  display: flex;
-}
-
-.primary-button2:hover {
-  background-color: var(--primary);
-  opacity: 1;
-  color: var(--white);
-}
-
-/* Обёртка для ленты логотипов */
-.logo-slider {
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-	background-color: #ffffff00;
-	padding: 10px 0;
-}
-
-/* Лента логотипов */
-.logo-track {
-	display: flex;
-	justify-content: space-between;
-	animation: scroll 20s linear infinite;
-	width: calc(150px * 8 + 160px); /* количество логотипов * их ширина + отступы */
-	will-change: transform; /* Оптимизация производительности */
-}
-
-/* Настройка логотипов, одинаковый размер */
-.partner-logo {
-	width: auto;
-	height: 120px;
-	margin: 0 20px;
-}
-
-/* Бесшовная анимация */
-@keyframes scroll {
-	0% {
-			transform: translateX(0);
-	}
-	100% {
-			transform: translateX(-100%);
-	}
-}
-
-/* Для плавности и бесшовности */
-.logo-track::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
 }
