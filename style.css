@@ -3475,7 +3475,7 @@ blockquote {
 }
 
 .section.banner-home-1 {
-  background-color: var(--primary);
+  background-color: var(--grey);
   padding-top: 60px;
   padding-bottom: 0;
   overflow: hidden;
@@ -11019,7 +11019,7 @@ blockquote {
   }
 
   .banner-image {
-    height: 680px;
+    height: auto;
   }
 
   .banner-block-grey {
@@ -11731,7 +11731,8 @@ blockquote {
   }
 
   .banner-image {
-    margin-top: 40px;
+    /* margin-top: 40px; */
+		padding-bottom: 40px;
   }
 
   .banner-block-grey {
